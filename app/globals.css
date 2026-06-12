@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #050505;
+  --foreground: #f4efe3;
+  --gold: #c83b3b;
+  --gold-soft: #911313;
+  --muted: #a9a49a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--background);
+}
+
+body {
+  min-height: 100vh;
+  color: var(--foreground);
+  background:
+    radial-gradient(circle at 50% -10%, rgba(200, 157, 59, 0.16), transparent 34rem),
+    linear-gradient(180deg, #050505 0%, #0a0a0b 46%, #050505 100%);
+}
+
+body::selection {
+  color: #050505;
+  background: var(--gold-soft);
+}
+
+a,
+button,
+input,
+textarea,
+select {
+  -webkit-tap-highlight-color: transparent;
+}
+
+@layer utilities {
+  .container-lux {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8;
+  }
+
+  .glass-panel {
+    @apply border border-white/10 bg-white/[0.055] shadow-gold-soft backdrop-blur-2xl;
+  }
+
+  .gold-text {
+    background: linear-gradient(115deg, #fff4c8 0%, #8d0808 42%, #a90f0f 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .metal-border {
+    position: relative;
+  }
+
+  .metal-border::before {
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    content: "";
+    border-radius: inherit;
+    background: linear-gradient(135deg, rgba(255, 244, 200, 0.65), rgba(200, 157, 59, 0.18), rgba(255, 255, 255, 0.08));
+    -webkit-mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  .noise-overlay {
+    position: relative;
+  }
+
+  .noise-overlay::after {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    content: "";
+    opacity: 0.12;
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+    background-size: 42px 42px;
+    mask-image: linear-gradient(to bottom, black, transparent 88%);
+  }
+}
+
+@keyframes sheen {
+  0% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(120%);
+  }
+}
+
+.sheen {
+  overflow: hidden;
+  position: relative;
+}
+
+.sheen::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  transform: translateX(-120%);
+  background: linear-gradient(110deg, transparent 20%, rgba(255, 244, 200, 0.18), transparent 70%);
+}
+
+.sheen:hover::after {
+  animation: sheen 1s ease;
+}
