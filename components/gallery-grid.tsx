@@ -121,6 +121,31 @@ export function GalleryGrid() {
           </div>
         </MotionDiv>
       ) : null}
+      <div className="w-full max-w-6xl mx-auto my-12 p-4">
+  <h3 className="text-white text-2xl font-bold mb-6 text-center tracking-wide uppercase">
+    Our Latest Detailing Work (Video Gallery)
+  </h3>
+  
+  {/* Grid Setup for 3 Videos */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    
+    {/* First Video */}
+    <div className="relative w-full h-[250px] sm:h-[300px] overflow-hidden rounded-2xl shadow-2xl border border-white/10">
+      <video src="/car-video.mp4" autoPlay loop muted playsInline className="w-full h-full object-cover" />
+    </div>
+
+    {/* Second Video */}
+    <div className="relative w-full h-[250px] sm:h-[300px] overflow-hidden rounded-2xl shadow-2xl border border-white/10">
+      <video src="/car-video2.mp4" autoPlay loop muted playsInline className="w-full h-full object-cover" />
+    </div>
+
+    {/* Third Video */}
+    <div className="relative w-full h-[250px] sm:h-[300px] overflow-hidden rounded-2xl shadow-2xl border border-white/10">
+      <video src="/car-video3.mp4" autoPlay loop muted playsInline className="w-full h-full object-cover" />
+    </div>
+
+  </div>
+</div>
     </section>
   );
 }

@@ -31,7 +31,7 @@ export function InstagramFeed() {
               className="inline-flex items-center justify-center gap-3 rounded-full border border-gold-300/35 px-6 py-4 text-sm font-extrabold uppercase tracking-[0.16em] text-gold-100 transition hover:bg-gold-300/10"
             >
               <Instagram className="size-5" />
-              Follow @iconiccarcare
+              Follow @iconic__car__care
             </a>
           </div>
         </FadeIn>

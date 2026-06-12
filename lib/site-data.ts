@@ -22,8 +22,8 @@ export const siteConfig = {
   phoneDisplay,
   phoneHref: `tel:${phoneHrefValue.startsWith("+") ? phoneHrefValue : `+${phoneHrefValue}`}`,
   whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "919904484312",
-  instagram: "https://www.instagram.com/iconiccarcare",
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://iconiccarcare.com",
+  instagram: "https://www.instagram.com/iconic__car__care?igsh=M2V2dG1xNWV3NHli&utm_source=qr",
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://@iconic__car__care.com",
   mapEmbed:
     "https://www.google.com/maps?q=Iconic%20Car%20care%2C%20Vadodara%2C%20Gujarat&output=embed"
 };
@@ -132,9 +132,10 @@ export const benefits = [
 export const packages = [
   {
     name: "Signature Gloss",
-    price: "From Rs. 7,999",
+    price: "From Rs. 5,499",
     tag: "Detailing starter",
     features: [
+      "(Depend car segment)",
       "Exterior foam wash and decontamination",
       "Single-stage gloss enhancement",
       "Interior vacuum and trim refresh",
@@ -142,11 +143,12 @@ export const packages = [
     ]
   },
   {
-    name: "Graphene Elite",
+    name: "Graphene Cotting",
     price: "From Rs. 15,499",
     tag: "Most booked",
     featured: true,
     features: [
+      "(Depend car segment)",
       "12H graphene coating system",
       "Paint correction preparation",
       "Wheel and glass coating add-ons",

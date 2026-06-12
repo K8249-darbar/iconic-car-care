@@ -93,13 +93,7 @@ export function ContactSection() {
               </div>
 
               <div className="mt-7 overflow-hidden rounded-lg border border-white/10">
-                <iframe
-                  title="Iconic Car care location map"
-                  src={siteConfig.mapEmbed}
-                  className="h-[330px] w-full grayscale"
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                />
+                
               </div>
             </div>
           </FadeIn>

@@ -52,7 +52,7 @@ export function Footer() {
             </p>
             <a href={siteConfig.instagram} className="flex items-center gap-3 hover:text-gold-200">
               <Instagram className="size-4 text-gold-300" />
-              @iconiccarcare
+              @iconic__car__care
             </a>
           </div>
         </div>
