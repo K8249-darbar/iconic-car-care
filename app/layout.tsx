@@ -25,6 +25,9 @@ export const metadata: Metadata = {
     template: "%s | Iconic Car care",
   },
   description: "Vadodara's premium destination for 10H graphene coating, ceramic coating...",
+  verification: {
+    google: "xoP4Zh3PLuEaL1TD_N5aLITw2HGyoqFxy3nAHaZlcuw",
+  },
 };
 
 const jsonLd = {
