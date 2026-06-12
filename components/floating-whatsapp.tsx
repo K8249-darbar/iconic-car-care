@@ -21,8 +21,7 @@ export default function FloatingWhatsapp() {
       {isOpen && (
         <div style={{ marginBottom: "16px", width: "320px", overflow: "hidden", borderRadius: "16px", backgroundColor: "#09090b", boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.5)", border: "1px solid rgba(255,255,255,0.1)" }}>
           
-          {/* હેડર */}
-          <div style={{ relative: "linear", backgroundColor: "#075E54", padding: "16px", color: "white", display: "flex", alignItems: "center", justifyBetween: "space-between" }}>
+        <div style={{ backgroundColor: "#075E54", padding: "16px", color: "white", display: "flex", alignItems: "center", gap: "12px" }}> 
             <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
               <div style={{ position: "relative", width: "40px", height: "40px", borderRadius: "50%", backgroundColor: "rgba(255,255,255,0.2)", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: "bold" }}>
                 ICC
