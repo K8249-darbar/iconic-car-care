@@ -101,7 +101,7 @@ export function ContactSection() {
 
               <div className="mt-7 overflow-hidden rounded-lg border border-white/10">
                 <Image 
-    src="/logo.jpeg" 
+    src="/logo1.jpeg" 
     alt="Iconic Car Care Logo" 
     width={500} 
     height={500} 
