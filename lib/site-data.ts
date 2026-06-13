@@ -18,14 +18,13 @@ export const siteConfig = {
   name: "Iconic Car care",
   tagline: "Ultimate Protection. Unmatched Shine.",
   location: "Vadodara, Gujarat",
-  address: "Vadodara, Gujarat, India",
+  address: "Shop 7 sukhdham signature opp Ananya Girls Hostel near aditya party plot gurukul char rasta waghodiya road vadodara",
   phoneDisplay,
   phoneHref: `tel:${phoneHrefValue.startsWith("+") ? phoneHrefValue : `+${phoneHrefValue}`}`,
   whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "919904484312",
   instagram: "https://www.instagram.com/iconic__car__care?igsh=M2V2dG1xNWV3NHli&utm_source=qr",
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://@iconic__car__care.com",
-  mapEmbed:
-    "https://www.google.com/maps?q=Iconic%20Car%20care%2C%20Vadodara%2C%20Gujarat&output=embed"
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://iconic_car_care.com",
+  mapEmbed: "https://maps.google.com/?q=22.286419,73.245834"
 };
 
 export const navItems = [

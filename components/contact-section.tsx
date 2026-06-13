@@ -5,7 +5,7 @@ import { CalendarDays, MapPin, MessageCircle, Phone, Send } from "lucide-react";
 import { FadeIn } from "@/components/motion-primitives";
 import { SectionHeading } from "@/components/section-heading";
 import { services, siteConfig } from "@/lib/site-data";
-
+import Image from "next/image";
 function buildWhatsAppMessage(formData: FormData) {
   const lines = [
     "🚨 *NEW BOOKING APPLICATION* 🚨",
@@ -64,9 +64,16 @@ export function ContactSection() {
               </h3>
               <div className="mt-6 grid gap-4 text-white/68">
                 <p className="flex items-center gap-3">
-                  <MapPin className="size-5 text-gold-300" />
-                  {siteConfig.address}
-                </p>
+  <MapPin className="size-5 text-gold-300" />
+  <a 
+    href="https://maps.google.com/?q=22.286419,73.245834" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="hover:underline hover:text-gold-200 transition-colors"
+  >
+    {siteConfig.address}
+  </a>
+</p>
                 <a href={siteConfig.phoneHref} className="flex items-center gap-3 hover:text-gold-200">
                   <Phone className="size-5 text-gold-300" />
                   {siteConfig.phoneDisplay}
@@ -93,7 +100,13 @@ export function ContactSection() {
               </div>
 
               <div className="mt-7 overflow-hidden rounded-lg border border-white/10">
-                
+                <Image 
+    src="/logo.jpeg" 
+    alt="Iconic Car Care Logo" 
+    width={500} 
+    height={500} 
+    className="mx-auto my-4 object-contain" 
+  />
               </div>
             </div>
           </FadeIn>
